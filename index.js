@@ -1,5 +1,5 @@
-var num=Math.floor(Math.random()*6+1);
-var add="images/"+"dice"+num+".png";
+var Num=Math.floor(Math.random()*6+1);
+var add="images/"+"dice"+Num+".png";
 document.querySelectorAll("img");
 var a=document.querySelectorAll("img")[0];
 a.setAttribute("src",add)
@@ -11,12 +11,12 @@ document.querySelectorAll("img");
 var b=document.querySelectorAll("img")[1];
 b.setAttribute("src",add)
 
-if(num>num1)
+if(Num>num1)
 {
     document.querySelector("h1").innerHTML="PLAYER 1 WIN";
 
 }
-else if(num==num1)
+else if(Num==num1)
 {
       document.querySelector("h1").innerHTML="tie";
 }
